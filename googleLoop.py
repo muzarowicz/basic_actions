@@ -1,5 +1,5 @@
 """Test
-prosta petla while - 4 ktorne wykonanie testu
+prosta petla while - 4 krotne wykonanie testu
 random choice """
 import pytest
 import random
@@ -33,6 +33,7 @@ def test_fill(webdriver):
     while (count < 4):
         webdriver.get("https://www.google.com")
         # assert 'Google' in webdriver.title
+        #webdriver.find_element_by_id('lst-bi').clear()
         webdriver.find_element_by_id('lst-ib').send_keys('hello')
         webdriver.find_element_by_id('lst-ib').send_keys(u'\ue007')
         time.sleep(4)
