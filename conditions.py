@@ -31,7 +31,7 @@ def test_find(webdriver):
         assert 'Google' in webdriver.title
         webdriver.close()
 
-
+webdriver
 """funkcja try"""
 
 def test_google(webdriver):
@@ -57,5 +57,3 @@ def test_facebook(webdriver):
             found = False
         except Exception:
             time.sleep(2)
-
-

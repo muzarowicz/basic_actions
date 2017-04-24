@@ -14,3 +14,4 @@ def test_nix_website_title(webdriver):
 def test_pytest_website_title(webdriver):
     webdriver.get('https://twitter.com/?lang=en')
     assert 'Twitter' in webdriver.title
+
