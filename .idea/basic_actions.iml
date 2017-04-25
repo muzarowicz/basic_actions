@@ -6,7 +6,12 @@
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">
+<<<<<<< HEAD
     <option name="projectConfiguration" value="Nosetests" />
     <option name="PROJECT_TEST_RUNNER" value="Nosetests" />
+=======
+    <option name="projectConfiguration" value="py.test" />
+    <option name="PROJECT_TEST_RUNNER" value="py.test" />
+>>>>>>> ec64756731060fcc72025dc50dee4daa117b5042
   </component>
 </module>
