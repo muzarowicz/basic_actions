@@ -1,10 +1,11 @@
-from selenium import webdriver
+from selenium.webdriver import Chrome
 import pytest
+#from selenium import webdriver
 
 @pytest.fixture(scope='session')
 def webdriver():
-    #webdriver = webdriver.Chrome()
-    driver = webdriver.PhantomJS()
+    driver = webdriver.Chrome()
+    #driver = webdriver.PhantomJS()
     return driver
 
 def test_google(webdriver):

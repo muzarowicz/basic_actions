@@ -19,26 +19,7 @@ path = "path_to_folder" # mozna dodac sciezke do folderu download
 def webdriver():
     driver = Chrome(executable_path='/usr/bin/chromedriver', chrome_options=options)
     return driver
-"""
-    # def test_download(webdriver):
-    # Download the file using Selenium here
-    before = os.listdir(path)
-    print(before)
-    webdriver.get('link_to_page')
-    webdriver.find_element_by_xpath(
-        "link_to_file").click()
-    time.sleep(5)
-    after = os.listdir(path)
-    print (after)
-    change = set(after) - set(before)
-    print (change)
-    if len(change) == 1:
-        filename = change.pop()  # file name stored as string
-        print(filename)
-        os.remove(path+filename) # cala sciezka musi byc dodana po zlaczeniu path+filename jest git
-    else:
-        print "More than one file or no file downloaded"
-"""
+
 def test_list(webdriver):
     webdriver.get('https://www.olx.pl/')
     webdriver.find_element_by_id('headerSearch').send_keys('huyndai i40')

@@ -37,7 +37,8 @@ def test_fill(webdriver):
         webdriver.find_element_by_id('lst-ib').send_keys('hello')
         webdriver.find_element_by_id('lst-ib').send_keys(u'\ue007')
         time.sleep(4)
-        assert 'hello - Szukaj w Google' in webdriver.title
+        assert webdriver.title == 'hello - Szukaj w Google' # poprawnie
+        #assert 'hello - Szukaj w Google' in webdriver.title # poprawnie
         count = count + 1
 
 
