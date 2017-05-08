@@ -5,9 +5,9 @@ from selenium.webdriver import PhantomJS
 import os
 import pytest
 import time
-import sys
-reload(sys)
-sys.setdefaultencoding('utf-8')
+import sys # potrzebne do odczytywania unicode
+reload(sys) #jw
+sys.setdefaultencoding('utf-8') # jw
 
 
 #options = webdriver.ChromeOptions()

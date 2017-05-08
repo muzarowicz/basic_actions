@@ -2,6 +2,7 @@ import pytest
 from selenium.webdriver import Chrome
 
 @pytest.fixture(scope='session')
+
 def webdriver(request):
     driver = Chrome()
     request.addfinalizer(driver.quit)

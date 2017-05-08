@@ -1,7 +1,7 @@
 import pytest
 from selenium.webdriver import PhantomJS
 
-@pytest.fixture(scope='session')
+@pytest.fixture()
 def webdriver(request):
     driver = PhantomJS()
     #driver = Chrome()
