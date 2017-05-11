@@ -27,5 +27,7 @@ for i in range(100):
     passwordField.send_keys("test12")
     submitButton.click()
 """
-
-
+"""
+#click on the text
+    webdriver.find_element_by_xpath("//*[contains(text(), 'Ogłoszenia - Sprzedam, kupię na OLX.pl')]").click()
+"""
