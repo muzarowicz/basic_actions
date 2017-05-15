@@ -31,3 +31,14 @@ for i in range(100):
 #click on the text
     webdriver.find_element_by_xpath("//*[contains(text(), 'Ogłoszenia - Sprzedam, kupię na OLX.pl')]").click()
 """
+
+
+"""
+#oczekiwanie na element
+WebElement myDynamicElement = (new WebDriverWait(driver, 10))
+  .until(ExpectedConditions.presenceOfElementLocated(By.id("login")));
+
+#sprawdzenie czy elem jest klikalny
+WebDriverWait wait = new WebDriverWait(driver, 10);
+WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("submit")));
+
