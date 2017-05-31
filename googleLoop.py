@@ -8,14 +8,14 @@ from selenium import webdriver
 from selenium.webdriver import Chrome
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
-
 options = webdriver.ChromeOptions()
+"""
 options.add_argument('--disable-notifications')
 options.add_argument('--disable-popup-blocking')
 options.add_argument('--start-maximized')
 options.add_argument('--applicationCacheEnabled')
 options.add_argument('--acceptSslCerts')
-
+"""
 
 
 @pytest.fixture()

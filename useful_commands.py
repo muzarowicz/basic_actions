@@ -42,3 +42,30 @@ WebElement myDynamicElement = (new WebDriverWait(driver, 10))
 WebDriverWait wait = new WebDriverWait(driver, 10);
 WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("submit")));
 
+###############################
+hover elements
+
+from selenium.webdriver.common.action_chains import ActionChains
+
+
+def hover(self):
+    wd = webdriver_connection.connection
+    element = wd.find_element_by_link_text(self.locator)
+    hov = ActionChains(wd).move_to_element(element)
+    hov.perform()
+
+next solution
+
+
+from selenium import webdriver
+from selenium.webdriver.common.action_chains import ActionChains
+
+firefox = webdriver.Firefox()
+firefox.get('http://foo.bar')
+element_to_hover_over = firefox.find_element_by_id("baz")
+
+hover = ActionChains(firefox).move_to_element(element_to_hover_over)
+hover.perform()
+
+"""
+
