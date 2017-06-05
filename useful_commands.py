@@ -67,5 +67,7 @@ element_to_hover_over = firefox.find_element_by_id("baz")
 hover = ActionChains(firefox).move_to_element(element_to_hover_over)
 hover.perform()
 
+#laczenie wartosci w xpath-ie
+python_link = driver.find_elements_by_xpath("//input[@name='lang' and @value='Python']")[0]
+python_link.click()
 """
-
