@@ -7,7 +7,6 @@ import pytest
     ('p@ssword', False),
     ('p@ssw0rd', True)
 ])
-@pytest.fixture(scope='session')
 def password(request):
     """Password fixture"""
     return request.param
@@ -33,5 +32,4 @@ def test_password_verifier_works(password):
     (input, result) = password
     print '\n'
     print input
-
     assert check_password(input) == result
